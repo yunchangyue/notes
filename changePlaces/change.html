@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>change places demo</title>
+    <link rel="stylesheet" href="dist/css/css.css">
+</head>
+<body>
+
+    <div class="container">
+        <span class="child bg-black"></span>
+        <span class="child bg-red"></span>
+    </div>
+    <script>
+        setTimeout(function () {
+            document.querySelector(".bg-red").className = "child bg-red to-left";
+            document.querySelector(".bg-black").className = "child bg-black to-right";
+        } ,  1*1000);
+
+    </script>
+
+</body>
+</html>
